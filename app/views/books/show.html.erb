@@ -1,5 +1,10 @@
-<h2>タイトル</h2>
+<p id="notice"><%=   flash[:notice]  %></p>
+<p><strong>Title:</strong>
+<%= @book.title %></p>
 
 
-<h2>本文</h2>
-<a href="/books" >start</a>
+<p><strong>Body:</strong>
+    <%= @book.body %></p>
+<%= link_to "Edit", edit_book_path(@book.id) %>
+    |
+<a href="/books" >Back</a>

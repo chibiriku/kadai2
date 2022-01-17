@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'homes#top'
   get 'books' => 'books#index'
   get '/top' => "homes#top"
   post 'books' => 'books#create'
